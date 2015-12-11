@@ -7,5 +7,6 @@ gem 'activesupport'
 gem 'activerecord'
 gem 'json'
 gem 'pry'
+# gem 'unobservable'
 
 # gem 'httparty'

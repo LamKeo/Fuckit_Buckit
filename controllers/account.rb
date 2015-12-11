@@ -27,7 +27,7 @@ class AccountController < ApplicationController
       session[:current_user] = @user
       current_user = @user
       # p 'redirect'
-      redirect '/createbuckit'
+      redirect '/buckethome'
     else
       # p 'no fucks'
       @message = "You may have no fucks to give, but please fill in all the fields!"
@@ -41,7 +41,7 @@ get '/login' do
 end
 
 post '/login' do
-  Account.authenticate(params[:user_name], params[:password])
+  @user = Account.authenticate(params[:user_name], params[:password])
     if @user
       session[:current_user] = @user
       redirect '/buckethome'
