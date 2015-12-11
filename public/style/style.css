@@ -4,3 +4,7 @@ body{
   font-size: 18px;
   font-family: 'Permanent Marker', cursive;
 }
+
+legend{
+  display: block;
+}
