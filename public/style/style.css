@@ -1,0 +1,27 @@
+body{
+  background-color: rgb(63, 173, 198);
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.two-col {
+    overflow: hidden;/* Makes this div contain its floats */
+}
+
+.two-col .col1,
+.two-col .col2 {
+    width 49%;
+}
+
+.two-col .col1 {
+    float: left;
+}
+
+.two-col .col2 {
+    float: right;
+}
+
+.two-col label {
+    display: block;
+}
