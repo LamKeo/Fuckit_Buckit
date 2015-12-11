@@ -16,15 +16,14 @@ post '/createbuckit' do
   authorization_check
   @user_name = session[:current_user].user_name
   @buckit = Buckit.new
-  @buckit.buckit_name = params[:buckit_name]
-  @buckit.goal = params[:goal]
-  @buckit.start = params[:start]
-  @buckit.ending = params[:ending]
+  @buckit.buck = params[:buck]
   @buckit.save
+  buckup = @buckit
+    p 'fuck buckup'
+
   session[:current_user] = @user
   current_user = @user
   redirect '/buckethome' #make this!
-
 
   erb :buckit_setup
 end
