@@ -1,6 +1,6 @@
 class BuckitController < ApplicationController
 
-# enable :sessions
+enable :sessions
 #routes to the home page
 get '/' do
  erb :home
@@ -39,7 +39,7 @@ get '/addfuck' do
   @buckit = Buckit.new
   @buckit.buck = 1
   @buckit.fk_user_name_id = session[:current_user].id
-  @buckit.fk_user_image_id = 1
+  @buckit.fk_user_image_id = 4
   @buckit.save
 
   erb :buckit_home
@@ -50,10 +50,11 @@ post '/addfuck' do
   @buckit = Buckit.new
   @buckit.buck = 1
   @buckit.fk_user_name_id = session[:current_user].id
-  @buckit.fk_user_image_id = 1
+  @buckit.fk_user_image_id = 4
   @buckit.save
   # @user_name = session[:current_user].user_name
-
+# @userimage = UserImages.find_by(id: 3)
+# @userimage.image_link =
   erb :buckit_home
 end
   get '/not_authorized_for_fuckit' do
