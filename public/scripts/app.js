@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-// var addBuck = document.querySelector("#addBuck");
-//
-// addBuck.addEventListener("click", function() {
-//   $("#addBuck").append("<img>");
-//   $("img").prop("src", "http://i.imgur.com/uNotNJN.png");
-// });
 var counter = 0;
 var addBuck = document.querySelector("#buckbutton");
 addBuck.addEventListener("click", function() {
@@ -23,10 +17,7 @@ addBuck.addEventListener("click", function() {
   });
 });
 
-
-
 });
-
 
 function getRandomIntegerRange(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;

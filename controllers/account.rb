@@ -31,7 +31,7 @@ class AccountController < ApplicationController
     else
       # p 'no fucks'
       @message = "You may have no fucks to give, but please fill in all the fields!"
-      erb :signin
+      erb :not_authorized_for_fuckit
     end
 end
 
@@ -59,13 +59,7 @@ end
 get '/logout' do
   authorization_check
   session[:current_user] = nil
-  redirect '/'
-end
-
-get '/logout' do
-  authorization_check
-  session[:current_user] = nil
-  redirect '/'
+  erb :logout
 end
 
 

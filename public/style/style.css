@@ -8,3 +8,10 @@ body{
 legend{
   display: block;
 }
+
+.peaceout{
+
+   position:fixed;
+   right:75%;
+   top:75%;
+}

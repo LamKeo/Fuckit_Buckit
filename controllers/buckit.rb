@@ -57,13 +57,17 @@ post '/addfuck' do
 # @userimage.image_link =
   erb :buckit_home
 end
-  get '/not_authorized_for_fuckit' do
-    erb :not_authorized_for_fuckit
-  end
 
- get '/file_not_found' do
-   erb :file_not_found
- end
+get '/logout' do
+  erb :logout
+end
+ #  get '/not_authorized_for_fuckit' do
+ #    erb :not_authorized_for_fuckit
+ #  end
+ #
+ # get '/file_not_found' do
+ #   erb :file_not_found
+ # end
 
 
 end #end of BuckitController class

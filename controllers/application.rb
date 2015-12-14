@@ -16,7 +16,6 @@ ActiveRecord::Base.establish_connection(
   set :public_dir, File.expand_path('../../public', __FILE__)
 
 
-
 #to find out if user already exists
 def does_username_exist(username)
   user = Account.find_by(:user_name => username)
@@ -30,7 +29,8 @@ end
 #check if user is in a active session
 def authorization_check
   if session[:current_user] == nil
-    redirect '/account/not_authorized'
+    # redirect '/account/not_authorized'
+    erb :not_authorized_for_fuckit
   else
     return true
   end

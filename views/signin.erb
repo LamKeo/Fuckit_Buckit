@@ -7,6 +7,17 @@
 <!-- make a form for new user and existing user-->
 <!--2 seperate tables. 1 for new_user and 1 for existing_user  -->
 
+
+<div id="signin">
+  <label>Sign In</label>
+  <form action="/account/login" method="post">
+  <!--This is for an existing user  -->
+  <input type="text" name="user_name" placeholder="Username">
+  <input type="password" name="password" placeholder="Password" >
+  <input type="submit"></input>
+  </form>
+</div>
+
 <div id="register">
 <label>Register</label>
     <form action="/account/register" method="post">
@@ -18,16 +29,4 @@
         <input type="password" name="password" placeholder="confirm password" >
       <input type="submit"></input>
     </form>
-</div>
-
-
-
-<div id="signin">
-  <label>Sign In</label>
-  <form action="/account/login" method="post">
-  <!--This is for an existing user  -->
-  <input type="text" name="user_name" placeholder="Username">
-  <input type="password" name="password" placeholder="Password" >
-  <input type="submit"></input>
-  </form>
 </div>
