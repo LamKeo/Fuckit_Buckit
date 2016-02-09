@@ -1,10 +1,8 @@
 class AccountController < ApplicationController
 
   get '/' do
-
     erb :home
   end
-
 
   #user registration, we want to make this be on the same page, side by side
   get '/register' do
