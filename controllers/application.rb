@@ -4,7 +4,7 @@ require 'bundler'
 Bundler.require
 
 ActiveRecord::Base.establish_connection(
-  :database => 'dkaibtd4gk3tb', #datbase name
+  :database => 'buckit', #datbase name
   :adapter => 'postgresql'
 )
 
